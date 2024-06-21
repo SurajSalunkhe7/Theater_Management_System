@@ -1,0 +1,340 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3338DD74-B86F-4DF8-B422-735090A1EEEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Theater_Management_System_</RootNamespace>
+    <AssemblyName>Theater_Management_System_</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Charges_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Charges_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="detas.cs" />
+    <Compile Include="frm_Add_Movie_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Add_Movie_Details.Designer.cs">
+      <DependentUpon>frm_Add_Movie_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Charges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Charges.Designer.cs">
+      <DependentUpon>frm_Charges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Charges_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Charges_Report.Designer.cs">
+      <DependentUpon>frm_Charges_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Login.Designer.cs">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_login_2.cs" />
+    <Compile Include="frm_Movie_Details_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Movie_Details_Report.Designer.cs">
+      <DependentUpon>frm_Movie_Details_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Screen 1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Screen 1.Designer.cs">
+      <DependentUpon>frm_Screen 1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Screen 2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Screen 2.Designer.cs">
+      <DependentUpon>frm_Screen 2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Ticket_Purchasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ticket_Purchasing.Designer.cs">
+      <DependentUpon>frm_Ticket_Purchasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Ticket_Purchasing_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Ticket_Purchasing_Report.Designer.cs">
+      <DependentUpon>frm_Ticket_Purchasing_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_Update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_Update.Designer.cs">
+      <DependentUpon>frm_Update.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Movie_Details.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Movie_Details.Designer.cs">
+      <DependentUpon>frm_View_Movie_Details.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_View_Ticket_Purchasing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_View_Ticket_Purchasing.Designer.cs">
+      <DependentUpon>frm_View_Ticket_Purchasing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Global_Vars.cs" />
+    <Compile Include="MDI_Theatre_Management_System.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_Theatre_Management_System.Designer.cs">
+      <DependentUpon>MDI_Theatre_Management_System.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Movie_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Movie_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Theater_Management_System_DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Theater_Management_System_DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Theater_Management_System_DBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Theater_Management_System_DBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Theater_Management_System_DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Theater_Management_System_DBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Theater_Management_System_DBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Theater_Management_System_DBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket_Purchasing_CrystalReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ticket_Purchasing_CrystalReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="Charges_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Charges_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Add_Movie_Details.resx">
+      <DependentUpon>frm_Add_Movie_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Charges.resx">
+      <DependentUpon>frm_Charges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Charges_Report.resx">
+      <DependentUpon>frm_Charges_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Login.resx">
+      <DependentUpon>frm_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Movie_Details_Report.resx">
+      <DependentUpon>frm_Movie_Details_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Screen 1.resx">
+      <DependentUpon>frm_Screen 1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Screen 2.resx">
+      <DependentUpon>frm_Screen 2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ticket_Purchasing.resx">
+      <DependentUpon>frm_Ticket_Purchasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Ticket_Purchasing_Report.resx">
+      <DependentUpon>frm_Ticket_Purchasing_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_Update.resx">
+      <DependentUpon>frm_Update.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Movie_Details.resx">
+      <DependentUpon>frm_View_Movie_Details.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_View_Ticket_Purchasing.resx">
+      <DependentUpon>frm_View_Ticket_Purchasing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_Theatre_Management_System.resx">
+      <DependentUpon>MDI_Theatre_Management_System.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Movie_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Movie_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Ticket_Purchasing_CrystalReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Ticket_Purchasing_CrystalReport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Theater_Management_System_DBDataSet.xsc">
+      <DependentUpon>Theater_Management_System_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Theater_Management_System_DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet.xss">
+      <DependentUpon>Theater_Management_System_DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet1.xsc">
+      <DependentUpon>Theater_Management_System_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Theater_Management_System_DBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet1.xss">
+      <DependentUpon>Theater_Management_System_DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet2.xsc">
+      <DependentUpon>Theater_Management_System_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Theater_Management_System_DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet2.xss">
+      <DependentUpon>Theater_Management_System_DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet3.xsc">
+      <DependentUpon>Theater_Management_System_DBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Theater_Management_System_DBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Theater_Management_System_DBDataSet3.xss">
+      <DependentUpon>Theater_Management_System_DBDataSet3.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %281%29.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\th %281%291.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp10795275-pawankhind-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wp10465984-gangubai-kathiawadi-wallpapers.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_kgf-chapter-2_4096x2048.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wallpapersden.com_marvel-comic-spider-man-ps4_3840x2168.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
